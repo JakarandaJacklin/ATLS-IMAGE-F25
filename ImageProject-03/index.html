@@ -5,10 +5,28 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-assets>
+        <a-asset-item id="door" src="assets/Door.obj"></a-asset-item>
+        <a-asset-item id="tree" src="assets/tree2.obj"></a-asset-item>
+        <a-asset-item id="shelf2" src="assets/bookshelf2.obj"></a-asset-item>
+
+
+        <!-- Tree-2 by Marc Solà [CC-BY] via Poly Pizza -->
+      </a-assets>
+      <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> --->
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+
+
+      <a-obj-model src="#door" position="0 0 -8" rotation="0 -90 0" scale="1.15 1.15 1.15" mtl="assets/Door.mtl"></a-obj-model>
+      <a-obj-model src="#shelf2" position="0 0 -8" rotation="0 0 0" scale="1 1 1" mtl="assets/bookshelf2.mtl"></a-obj-model>
+      <a-obj-model src="#tree" position="-0.256 3.429 -3.584" scale="2 2 2"></a-obj-model>
+
+      <!-- <a-light type="ambient" color="#445451"></a-light> -->
+      <a-light light="color: #ff6000; intensity: 2; type: point" position="0 2.459 -6.235"></a-light>
+      <a-entity light="type: directional; color: #f7cb72; groundColor: #edfff7; intensity: 2" position="0 2.099 -2.839"></a-entity> -->
+
       <a-sky color="#ECECEC"></a-sky>
     </a-scene>
   </body>
